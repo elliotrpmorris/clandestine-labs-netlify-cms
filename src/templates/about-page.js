@@ -1,63 +1,61 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import Layout from "../components/Layout";
+import styled from "styled-components";
+import What from "../components/What";
+import Who from "../components/Who";
+import How from "../components//How";
+import { Grid, Col, Row } from "react-styled-flexboxgrid";
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+export const Title = styled.h1`
+  color: #20232a;
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  @media (min-width: 414px) {
+    font-size: 4rem;
+  }
+`;
 
+export const SubTitle = styled.p`
+  color: #20232a;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  @media (min-width: 414px) {
+    font-size: 1.1rem;
+  }
+`;
+
+export const AboutPageTemplate = () => {
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
+    <section id="page-wrap">
+      <Grid>
+        <Row>
+          <Col xs={12}>
+            <Title>About Us</Title>
+          </Col>
+          <Col xs={12}>
+            <SubTitle>Learn more about us and what we do.</SubTitle>
+          </Col>
+        </Row>
+      </Grid>
+      <Who />
+      <br />
+      <What />
+      <br />
+      <How />
+      <br />
     </section>
-  )
-}
+  );
+};
 
-AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
-
-const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
-
+const AboutPage = () => {
   return (
     <Layout>
-      <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
+      <AboutPageTemplate />
     </Layout>
-  )
-}
+  );
+};
 
-AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
-}
-
-export default AboutPage
-
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
-    }
-  }
-`
+export default AboutPage;
