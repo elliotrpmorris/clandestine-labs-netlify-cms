@@ -1,13 +1,7 @@
 import React from "react";
-import About from "../templates/about-page";
-import Home from "../templates/index-page";
-// import Contact from "../Contact/Contact";
-// import Services from "../Services/Services";
-// import Work from "../Work/Work";
 import styled from "styled-components";
 import { elastic as Menu } from "react-burger-menu";
 import { Link } from "gatsby";
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export const NavBar = styled.div`
   background-color: #323741;
@@ -104,20 +98,14 @@ const Nav = class extends React.Component {
             <Page onClick={() => this.closeMenu()} to="/services">
               Services
             </Page>
-            {/* <Page onClick={() => this.closeMenu()} to="/Work">
+            <Page onClick={() => this.closeMenu()} to="/projects">
               Projects
             </Page>
             <Page onClick={() => this.closeMenu()} to="/contact">
               Contact
-            </Page> */}
+            </Page>
           </Menu>
         </div>
-        {/* <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} /> */}
-        {/* <Route path="/services" component={Services} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/work" component={Work} /> */}
-        {/* </Router> */}
       </section>
     );
   }

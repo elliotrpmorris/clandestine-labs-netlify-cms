@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Grid, Col, Row } from "react-styled-flexboxgrid";
 import Service from "../components/Service";
+import Layout from "../components/Layout";
 
 export const Title = styled.h1`
   color: #20232a;
@@ -24,7 +25,7 @@ export const SubTitle = styled.p`
   }
 `;
 
-function Services() {
+export const ServicesPageTemplate = () => {
   return (
     <section id="page-wrap">
       <Grid>
@@ -72,4 +73,12 @@ function Services() {
   );
 }
 
-export default Services;
+const ServicesPage = () => {
+    return (
+      <Layout>
+        <ServicesPageTemplate />
+      </Layout>
+    );
+  };
+
+export default ServicesPage;
