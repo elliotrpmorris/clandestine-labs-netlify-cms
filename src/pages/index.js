@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Grid, Col, Row } from "react-styled-flexboxgrid";
 import Layout from "../components/Layout";
+
 export const SubTitle = styled.p`
   color: #20232a;
   display: flex;

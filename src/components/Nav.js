@@ -101,6 +101,9 @@ const Nav = class extends React.Component {
             <Page onClick={() => this.closeMenu()} to="/projects">
               Projects
             </Page>
+            <Page onClick={() => this.closeMenu()} to="/blog">
+              Blog
+            </Page>
             <Page onClick={() => this.closeMenu()} to="/contact">
               Contact
             </Page>
