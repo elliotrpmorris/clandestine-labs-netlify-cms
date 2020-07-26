@@ -194,14 +194,11 @@ export default class Index extends React.Component {
                   <WrapInput>
                     <InputLabel>Your Name:</InputLabel>
                     <Box
-                     
                       placeholder="Enter your name..."
-                      name="name"
                       value={name}
                       onChange={this.handleChange}
                       type={'text'}
                       name={'name'}
-                      onChange={this.handleChange}
                       id={'name'}
                       required={true}
                     />
