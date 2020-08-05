@@ -9,16 +9,16 @@ export const Title = styled.h1`
   color: #323741;
   text-align: left;
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   @media (min-width: 360px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   @media (min-width: 415px) {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   @media (min-width: 768px) {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 `;
 
@@ -55,11 +55,8 @@ class TagRoute extends React.Component {
             <section>
               <Helmet title={`${tag} | ${title}`} />
               <div>
-                <div className="columns">
-                  <div
-                    className="column is-10 is-offset-1"
-                    style={{ marginBottom: "6rem" }}
-                  >
+                <div>
+                  <div>
                     <Title>{tagHeader}</Title>
                     <Tags>{postLinks}</Tags>
                     <p>
