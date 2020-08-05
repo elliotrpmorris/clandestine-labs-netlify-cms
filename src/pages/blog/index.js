@@ -1,5 +1,4 @@
 import React from "react";
-
 import Layout from "../../components/Layout";
 import BlogRoll from "../../components/BlogRoll";
 import styled from "styled-components";
@@ -9,21 +8,17 @@ export const Title = styled.h1`
   color: #323741;
   text-align: left;
   margin: 0;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
 
   @media (min-width: 360px) {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   @media (min-width: 415px) {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   @media (min-width: 768px) {
     font-size: 4.5rem;
   }
-`;
-
-export const Wrapper = styled.div`
-  background-color: #d8d8d8;
 `;
 
 export default class BlogIndexPage extends React.Component {

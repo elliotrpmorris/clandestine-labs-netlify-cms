@@ -29,12 +29,8 @@ export const BlogPostWrapper = styled.div`
   flex-direction: column;
   z-index: 1;
   position: relative;
-  padding: space(40);
-  background-color: #000000;
+  background-color: #d8d8d8;
 
-  @media (min-width: 768px) {
-    padding: space(80);
-  }
   &:hover {
     &::before {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
@@ -46,7 +42,7 @@ export const BlogPostWrapper = styled.div`
   &::before {
     content: " ";
     display: block;
-    background-color: #000000;
+    background-color: #d8d8d8;
     height: 100%;
     left: 0;
     position: absolute;
