@@ -9,16 +9,16 @@ export const Title = styled.h1`
   color: #323741;
   text-align: left;
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
 
   @media (min-width: 360px) {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   @media (min-width: 415px) {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   @media (min-width: 768px) {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 `;
 

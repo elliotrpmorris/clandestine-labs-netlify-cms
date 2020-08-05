@@ -48,9 +48,12 @@ export const BlogPostWrapper = styled.div`
     top: 0;
     width: 100%;
     z-index: -1;
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
     box-shadow: -1px 1px 24px 0 rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    @media (min-width: 768px) {
+      box-shadow: -1px 1px 24px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 `;
 

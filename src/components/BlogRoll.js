@@ -17,8 +17,11 @@ export const BlogMeta = styled.p`
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1rem;
 
+  @media (min-width: 360px) {
+    font-size: 1.25rem;
+  }
   @media (min-width: 768px) {
     font-size: 2rem;
   }
