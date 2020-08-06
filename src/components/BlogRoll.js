@@ -12,18 +12,19 @@ export const BlogContainer = styled.header`
 
 export const BlogMeta = styled.p`
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.75rem;
 
   @media (min-width: 360px) {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   @media (min-width: 768px) {
     font-size: 2rem;
+    top: 50%;
   }
 `;
 

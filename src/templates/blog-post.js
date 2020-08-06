@@ -9,19 +9,13 @@ import styled from "styled-components";
 import { Grid, Row } from "react-styled-flexboxgrid";
 
 export const Title = styled.h1`
-  color: #323741;
-  text-align: left;
-  margin: 0;
-  font-size: 2.5rem;
-
-  @media (min-width: 360px) {
-    font-size: 3rem;
-  }
-  @media (min-width: 415px) {
-    font-size: 3.5rem;
-  }
-  @media (min-width: 768px) {
-    font-size: 4.5rem;
+  color: #20232a;
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  @media (min-width: 414px) {
+    font-size: 4rem;
   }
 `;
 
@@ -82,7 +76,7 @@ export const BlogPostTemplate = ({
       <Row>
         {helmet || ""}
         <BlogPostWrapper>
-          <div>
+          <div id="page-wrap">
             <Title>{title}</Title>
             <p>{description}</p>
             <PostContent className={"post"} content={content} />
