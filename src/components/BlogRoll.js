@@ -12,12 +12,11 @@ export const BlogContainer = styled.header`
 
 export const BlogMeta = styled.p`
   position: absolute;
-  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
 
   @media (min-width: 360px) {
     font-size: 1rem;

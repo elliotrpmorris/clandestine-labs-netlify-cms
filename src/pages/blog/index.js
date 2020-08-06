@@ -8,9 +8,9 @@ export const Title = styled.h1`
   color: #20232a;
   display: flex;
   justify-content: center;
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin-bottom: 0;
-  @media (min-width: 414px) {
+  @media (min-width: 768px) {
     font-size: 4rem;
   }
 `;
